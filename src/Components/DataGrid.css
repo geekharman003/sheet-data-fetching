@@ -1,0 +1,13 @@
+.data-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.no-data-message {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  margin: 20px 0;
+}

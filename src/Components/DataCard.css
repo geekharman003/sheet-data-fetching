@@ -1,0 +1,113 @@
+.data-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 8px;
+   width: 300px;
+
+  /* height: 100px; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 16px);
+  /* overflow-y: scroll; */
+
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+.sheet-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 12px;
+}
+
+.data-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.data-field {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95em;
+}
+
+.field-key {
+  font-weight: bold;
+  color: #555;
+}
+
+.field-value {
+  color: #333;
+}
+
+/* 52 Week Range Styles */
+#fiftytwo-week-low-high {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.range-amount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rangestick {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fiftytwo-week-low{
+  color: #000;
+}
+
+.fiftytwo-week-high{
+  color: #000;
+}
+
+.fiftytwo-week-low-text {
+  font-size: 1rem;
+  color: red;
+}
+
+.fiftytwo-week-high-text {
+  font-size: 1rem;
+  color: green;
+}
+
+.horizontal-line {
+  width: 70%;
+  height: 5px;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+.dma-select {
+  margin-top: 16px;
+}
+
+.dma-select label {
+  font-size: 1rem;
+  margin-right: 8px;
+}
+
+.dma-select select {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.dma-value {
+  font-size: 1.1rem;
+  margin-top: 8px;
+  color: #333;
+}
