@@ -110,7 +110,7 @@ function DataCard({ row }) {
                 <hr style={{ margin: "0" }} />
               </React.Fragment>
             ))}
-          </div>:undefined
+          </div>
 
 
           {/* Back button to collapse the detailed view */}
