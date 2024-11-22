@@ -36,7 +36,7 @@ function FetchCSVData({ setFetchedData }) {
     // Set up interval to fetch data every 5 seconds
     const interval = setInterval(() => {
       fetchCSVData();
-    }, 5000);
+    }, 60000);
 
     // Cleanup interval on component unmount
     return () => clearInterval(interval);

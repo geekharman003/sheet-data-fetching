@@ -3,7 +3,7 @@ import React from "react";
 
 function Filters({ filters, setFilters }) {
   const handleChange = (e) => {
-    console.log(filters)
+    // console.log(filters)
     const { name, value } = e.target;
     setFilters((prev) => ({ ...prev, [name]: value }));
   };

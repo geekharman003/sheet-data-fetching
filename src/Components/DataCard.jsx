@@ -34,7 +34,9 @@ function DataCard({ row }) {
         backgroundColor: "#fff",
         height: isDetailedView ? "auto" : height,
         padding: "5px",
-        overflowY: isDetailedView ? "auto" : overflow,
+        maxHeight:"400px",
+        maxWidth:"200px",
+        overflowY: isDetailedView ? "scroll" : overflow,
       }}
     >
       {/* Display company name with a click event */}
@@ -67,7 +69,7 @@ function DataCard({ row }) {
                 <span style={{ color: "red" }}>L</span>
                 <div
                   style={{
-                    width: "250px",
+                    width: "50%",
                     height: "5px",
                     backgroundColor: "#000",
                     borderRadius: "5px",
