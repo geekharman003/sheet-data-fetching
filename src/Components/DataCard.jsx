@@ -12,8 +12,10 @@ function DataCard({ row }) {
   } = row || {}; // Ensure `row` is defined
 
   const [isDetailedView, setIsDetailedView] = useState(false);  // State for toggling between views
+  const [overviewDetails,setOverviewDetails] = useState(false);
   const [height, setHeight] = useState("50px");
   const [overflow, setOverflow] = useState("hidden");
+  
 
   // Parse numeric values safely
   const high = parseFloat(weekHigh.replace(/,/g, "")) || 0;
@@ -23,6 +25,12 @@ function DataCard({ row }) {
   function handleClick(e) {
     e.stopPropagation(); // Prevent parent click from firing
     setIsDetailedView((prev) => !prev); // Toggle detailed view on/off
+  }
+
+
+  function showOverviewDetails(e){
+    setOverviewDetails((prev) =>!prev)
+    console.log(e.target)
   }
 
   return (
@@ -86,6 +94,9 @@ function DataCard({ row }) {
           </p>
 
           {/* Display other data dynamically */}
+          {/* <button onClick={showOverviewDetails}>Show Details</button> */}
+
+        
           <div>
             <h4>Overview</h4>
             {Object.entries(otherData).map(([key, value]) => (
@@ -99,7 +110,8 @@ function DataCard({ row }) {
                 <hr style={{ margin: "0" }} />
               </React.Fragment>
             ))}
-          </div>
+          </div>:undefined
+
 
           {/* Back button to collapse the detailed view */}
           {/* <button
