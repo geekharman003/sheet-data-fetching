@@ -13,7 +13,7 @@ function Filters({ filters, setFilters }) {
       {/* Filter by NSE Code */}
       <div className="filter-item">
         <label htmlFor="nse-code">Search by NSE Code:</label>
-        <input style={{border:"none",padding:"0.5rem 0.3rem",marginLeft:"5px",fontFamily:"inherit",borderRadius:"30px",backgroundColor:"#2f3c4c",outline:"none",color:"#fff"}}
+        <input style={{border:"none",padding:"0.5rem 0.3rem",marginLeft:"5px",fontFamily:"inherit",borderRadius:"30px",backgroundColor:"#5e5b5b",outline:"none",color:"#fff"}}
           type="text"
           id="nse-code"
           name="NSECode"

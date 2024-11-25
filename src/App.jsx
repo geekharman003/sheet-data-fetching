@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="app">
       <div id="stocks-image" style={{ width: "100vw", height: "300px" }}>
-        <img width="100%" height="100%" src="./src/images/stock-news.jpg" alt="" />
+        <img width="100%" height="100%" src="https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg" alt="" />
       </div>
       <h1 style={{color:"#2f3c4c"}}>Stocks Data</h1>
       
