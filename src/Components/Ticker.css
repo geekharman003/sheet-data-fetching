@@ -7,10 +7,10 @@
   
   .ticker-item {
     font-size: 16px;
-    color: #333;
+    color: #000
   }
   
   .ticker-item strong {
-    color: #007bff;
+    color: #fd8549;
   }
   

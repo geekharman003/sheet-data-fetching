@@ -4,7 +4,7 @@ import "./Ticker.css";
 function Ticker({ marqueeData }) {
   // console.log(marqueeData)m 
   return (
-    <div style={{display:"flex" ,margin:"1rem",borderRadius:"10px"}} className="ticker-container">
+    <div style={{display:"flex" ,margin:"1rem",borderRadius:"10px",color:"#fd8549"}} className="ticker-container">
       <marquee behavior="scroll" direction="left">
         {marqueeData.map((row, index) => (
           <span key={index} className="ticker-item">

@@ -23,9 +23,9 @@ function FetchCSVData({ setFetchedData }) {
       const smallCapData = Papa.parse(responses[2].data, { header: true, skipEmptyLines: true }).data;
 
       setFetchedData(largeCapData, midCapData, smallCapData); // Pass data to parent component
-      console.log(largeCapData)
+      // console.log(largeCapData)
     } catch (error) {
-      console.error("Error fetching CSV data:", error);
+      console.error("Error fetching CSV data:", );
     }
   };
 

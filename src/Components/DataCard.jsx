@@ -34,23 +34,26 @@ function DataCard({ row }) {
   }
 
   return (
+    <>
+    {/* List of Top 100 Companies */}
     <div
+    
       onClick={handleClick}
       className="data-card"
       style={{
-        color: "#000",
-        backgroundColor: "#fff",
         height: isDetailedView ? "auto" : height,
-        padding: "5px",
+        padding: "0px 5px",
         maxHeight:"400px",
         maxWidth:"200px",
         overflowY: isDetailedView ? "scroll" : overflow,
+
       }}
     >
       {/* Display company name with a click event */}
       <h3
         onClick={handleClick}
-        style={{ color: "#017cff", cursor: "pointer" }}
+        style={{ color: "#000", cursor: "pointer",margin:"13px"  }}
+  
       >
         {nseCode.slice(4) || "Unknown Company"}
       </h3>
@@ -139,6 +142,7 @@ function DataCard({ row }) {
         </div>
       )}
     </div>
+    </>
   );
 }
 

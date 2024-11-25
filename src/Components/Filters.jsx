@@ -9,11 +9,11 @@ function Filters({ filters, setFilters }) {
   };
 
   return (
-    <div className="filters" style={{display:"flex",justifyContent:"center",gap:"5px"}}>
+    <div className="filters" style={{display:"flex",gap:"5px",margin:"20px 0"}}>
       {/* Filter by NSE Code */}
       <div className="filter-item">
         <label htmlFor="nse-code">Search by NSE Code:</label>
-        <input style={{border:"none",padding:"1rem",marginLeft:"5px",fontFamily:"inherit",borderRadius:"10px"}}
+        <input style={{border:"none",padding:"0.5rem 0.3rem",marginLeft:"5px",fontFamily:"inherit",borderRadius:"30px",backgroundColor:"#2f3c4c",outline:"none",color:"#fff"}}
           type="text"
           id="nse-code"
           name="NSECode"
